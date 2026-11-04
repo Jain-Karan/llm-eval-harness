@@ -31,6 +31,10 @@ class GateConfig:
         }
     )
     max_cost_increase: float = 0.10  # relative
+    # Guardrails are a safety net, not a substitute for a working prompt. If they suddenly fire
+    # far more often, the model is producing what they block, and the guarded output alone
+    # would hide it.
+    max_guardrail_rate_increase: float = 0.02  # absolute, share of answers
 
 
 @dataclass
@@ -38,6 +42,8 @@ class GateResult:
     passed: bool
     failures: list[str]
     rows: list[tuple[str, str, float, float]]  # scope, metric, baseline, candidate
+    regressed: list[tuple[str, str]] = field(default_factory=list)  # (case_id, why)
+    cases: int = 0
 
     def markdown(self) -> str:
         head = "PASS" if self.passed else "FAIL"
@@ -47,6 +53,17 @@ class GateResult:
         out += ["| scope | metric | baseline | candidate | change |", "|---|---|---|---|---|"]
         for scope, metric, b, c in self.rows:
             out.append(f"| {scope} | {metric} | {b:.4g} | {c:.4g} | {c - b:+.4g} |")
+        if self.regressed:
+            share = len(self.regressed) / self.cases if self.cases else 0
+            out += [
+                "",
+                f"**{len(self.regressed)} of {self.cases} answers ({share:.1%}) "
+                "regressed or needed a guardrail:**",
+                "",
+            ]
+            out += [f"- `{cid}`: {why}" for cid, why in self.regressed[:50]]
+            if len(self.regressed) > 50:
+                out.append(f"- ... and {len(self.regressed) - 50} more")
         return "\n".join(out)
 
 
@@ -91,4 +108,38 @@ def check(
             failures.append(
                 f"{scope}: cost per query +{(cc - bc) / bc:.0%} (max +{cfg.max_cost_increase:.0%})"
             )
-    return GateResult(not failures, failures, rows)
+    for scope, b, c in scopes:
+        br = b["guardrail_interventions"] / b["cases"] if b.get("cases") else 0.0
+        cr = c["guardrail_interventions"] / c["cases"] if c.get("cases") else 0.0
+        rows.append((scope, "guardrail_rate", br, cr))
+        if cr - br > cfg.max_guardrail_rate_increase + 1e-9:
+            failures.append(
+                f"{scope}: guardrails fired on {cr:.1%} of answers, up from {br:.1%}"
+                f" (max +{cfg.max_guardrail_rate_increase:.0%})"
+            )
+
+    regressed = case_diff(base.get("results", []), cand.get("results", []))
+    return GateResult(not failures, failures, rows, regressed, len(cand.get("results", [])))
+
+
+def case_diff(base: list[dict], cand: list[dict]) -> list[tuple[str, str]]:
+    """Cases that got worse: right before and wrong now, newly unfaithful, newly leaking PII, or
+    newly caught by a guardrail."""
+    before = {r["case_id"]: r for r in base}
+    out = []
+    for r in cand:
+        b = before.get(r["case_id"])
+        if b is None:
+            continue
+        why = []
+        if b["correct"] and not r["correct"]:
+            why.append("was correct, now wrong")
+        if r["hallucinated"] and not b["hallucinated"]:
+            why.append("unsupported claim")
+        if r["pii_leak"] and not b["pii_leak"]:
+            why.append("PII leak")
+        if r["guardrail_events"] and not b["guardrail_events"]:
+            why.append("guardrail: " + ", ".join(r["guardrail_events"]))
+        if why:
+            out.append((r["case_id"], "; ".join(why)))
+    return out
