@@ -26,6 +26,9 @@ ABSTAIN = re.compile(
 )
 REFUSE = re.compile(r"\b(can't|cannot|unable to|not able to) share\b", re.I)
 PLEASANTRY = re.compile(r"\b(let me know|happy to help|anything else)\b", re.I)
+# Redirects make no factual claim. Guardrail fallbacks end with one ("Please contact support."),
+# and scoring it as an unsupported claim counted every guarded answer as a hallucination.
+REDIRECT = re.compile(r"\b(contact (customer )?support|reach out to (us|support)|call us)\b", re.I)
 STOP = frozenset(
     [
         "the",
@@ -68,7 +71,10 @@ def claims(answer: str) -> list[str]:
     return [
         s
         for s in _SENT.split(answer.strip())
-        if s and not (ABSTAIN.search(s) or REFUSE.search(s) or PLEASANTRY.search(s))
+        if s
+        and not (
+            ABSTAIN.search(s) or REFUSE.search(s) or PLEASANTRY.search(s) or REDIRECT.search(s)
+        )
     ]
 
 

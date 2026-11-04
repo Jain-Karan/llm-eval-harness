@@ -112,3 +112,15 @@ def test_unsupported_figure_guard_blocks_made_up_numbers():
     blocked = g.apply("q", resp("It is $60, based on our fee schedule."))
     assert blocked.guardrail_events == ["unsupported_figure:$60"]
     assert "can't confirm" in blocked.answer
+
+
+def test_guardrail_fallback_is_not_scored_as_a_hallucination():
+    """Regression: the unsupported-figure guard's fallback ends with "Please contact support.",
+    which was scored as an unsupported claim, so every answer the guard fixed counted as a
+    hallucination (guarded v2: 7.7% hallucination rate, faithfulness 0.923)."""
+    from evalharness.guardrails import CANT_CONFIRM
+
+    assert claims(CANT_CONFIRM) == []
+    assert faithfulness(CANT_CONFIRM, CTX) == 1.0
+    blocked = UnsupportedFigureGuard().apply("q", resp("It is $60, based on our fee schedule."))
+    assert faithfulness(blocked.answer, blocked.contexts) == 1.0
