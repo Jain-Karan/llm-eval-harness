@@ -124,3 +124,24 @@ def test_guardrail_fallback_is_not_scored_as_a_hallucination():
     assert faithfulness(CANT_CONFIRM, CTX) == 1.0
     blocked = UnsupportedFigureGuard().apply("q", resp("It is $60, based on our fee schedule."))
     assert faithfulness(blocked.answer, blocked.contexts) == 1.0
+
+
+def test_figure_guard_blocks_made_up_figure_that_matches_another_product():
+    """Regression: v2 answered "It is $62, based on our current fee schedule." for an
+    undocumented fee. $62 was a real figure in an unrelated retrieved document, so the guard,
+    which only checked that the figure appeared somewhere in the context, let it through."""
+    ctx = CTX + [
+        Context(
+            "d2", "Northwind Travel Elite Card product summary. The card has an annual fee of $62."
+        )
+    ]
+    blocked = UnsupportedFigureGuard().apply(
+        "What is the early closure fee for the Everyday Checking?",
+        resp("It is $62, based on our current fee schedule.", ctx),
+    )
+    assert blocked.guardrail_events == ["unsupported_figure:$62"]
+
+
+def test_figure_guard_allows_paraphrased_supported_figures():
+    ok = UnsupportedFigureGuard().apply("q", resp("Everyday Checking's fee is $8 a month."))
+    assert ok.guardrail_events == []
