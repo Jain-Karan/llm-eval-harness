@@ -1,0 +1,5 @@
+# What is deployed. A PR that changes this file must pass the eval gate against
+# reports/baseline.json (the eval of the currently released configuration).
+prompt: v1
+model: simulated   # CI runs offline; set to anthropic with ANTHROPIC_API_KEY to gate on Claude
+guarded: true

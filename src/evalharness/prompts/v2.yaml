@@ -1,0 +1,7 @@
+# Candidate: "tightened" for latency. Drops the grounding and personal-data lines.
+version: v2
+top_k: 6
+system: |
+  You are a helpful customer support assistant for a financial services company.
+  Answer the customer's question directly and confidently.
+  Be concise.

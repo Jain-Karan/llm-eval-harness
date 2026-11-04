@@ -1,0 +1,37 @@
+name: eval-gate
+
+# Evaluates the configuration in release.yaml on every golden set and fails the build if it
+# regresses against reports/baseline.json (overall or for any tenant), leaks PII, or raises
+# cost per query beyond the allowed margin. The comparison table lands in the job summary.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[anthropic]"
+      - name: Evaluate release configuration
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          PROMPT=$(python -c "import yaml;print(yaml.safe_load(open('release.yaml'))['prompt'])")
+          MODEL=$(python -c "import yaml;print(yaml.safe_load(open('release.yaml'))['model'])")
+          GUARD=$(python -c "import yaml;print('--guarded' if yaml.safe_load(open('release.yaml'))['guarded'] else '')")
+          evalh run --prompt "$PROMPT" --model "$MODEL" $GUARD --trace reports/trace.jsonl --out reports/candidate.json
+      - name: Gate against baseline
+        run: evalh gate --baseline reports/baseline.json --candidate reports/candidate.json --summary "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-report
+          path: |
+            reports/candidate.json
+            reports/trace.jsonl
