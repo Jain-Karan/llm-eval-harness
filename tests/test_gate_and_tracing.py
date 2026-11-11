@@ -89,3 +89,21 @@ def test_langfuse_tracer_emits_nested_observations():
     assert names.count("eval-case") == 2
     assert {"retrieve", "generate"} <= set(names)
     assert {s["name"] for s in scores} == {"faithfulness", "correct", "hallucinated", "pii_leak"}
+
+
+def test_guardrails_masking_a_regression_fail_the_gate():
+    """Regression: with guardrails on, the v2 prompt (which drops the grounding and personal-
+    data rules) scored the same as v1 because the guards caught every bad answer, so the gate
+    passed it. Guards firing on 21 of 117 answers instead of 0 is the signal."""
+    base = evaluate("v1", guarded=True).to_json()
+    cand = evaluate("v2", guarded=True).to_json()
+    r = check(base, cand)
+    assert not r.passed
+    assert any("guardrails fired" in f for f in r.failures)
+    assert len(r.regressed) >= 20 and "regressed or needed a guardrail" in r.markdown()
+
+
+def test_cost_optimised_prompt_still_passes_with_guardrails():
+    assert check(
+        evaluate("v1", guarded=True).to_json(), evaluate("v3", guarded=True).to_json()
+    ).passed
