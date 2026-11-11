@@ -15,7 +15,7 @@
     "cost_per_query_usd": 0.001967282051282051,
     "input_tokens_per_query": 600.1196581196581,
     "output_tokens_per_query": 11.128205128205128,
-    "p95_latency_ms": 0.6176319999440238,
+    "p95_latency_ms": 0.8410479999838572,
     "guardrail_interventions": 0,
     "judge_agreement": null
   },
@@ -33,7 +33,7 @@
       "cost_per_query_usd": 0.002020032786885246,
       "input_tokens_per_query": 617.8524590163935,
       "output_tokens_per_query": 11.098360655737705,
-      "p95_latency_ms": 0.6317170000329497,
+      "p95_latency_ms": 0.793379000015193,
       "guardrail_interventions": 0,
       "judge_agreement": null
     },
@@ -50,7 +50,7 @@
       "cost_per_query_usd": 0.0019098214285714287,
       "input_tokens_per_query": 580.8035714285714,
       "output_tokens_per_query": 11.160714285714286,
-      "p95_latency_ms": 0.5364410000083808,
+      "p95_latency_ms": 0.9982419999232661,
       "guardrail_interventions": 0,
       "judge_agreement": null
     }
@@ -69,7 +69,7 @@
       "input_tokens": 691,
       "output_tokens": 9,
       "cost_usd": 0.002208,
-      "latency_ms": 0.5321930000263819,
+      "latency_ms": 0.53095900000244,
       "judge": {},
       "guardrail_events": []
     },
@@ -86,7 +86,7 @@
       "input_tokens": 691,
       "output_tokens": 9,
       "cost_usd": 0.002208,
-      "latency_ms": 0.5038419999436883,
+      "latency_ms": 0.5014100000835242,
       "judge": {},
       "guardrail_events": []
     },
@@ -103,7 +103,7 @@
       "input_tokens": 689,
       "output_tokens": 12,
       "cost_usd": 0.002247,
-      "latency_ms": 0.5262260000336028,
+      "latency_ms": 0.42744500001390406,
       "judge": {},
       "guardrail_events": []
     },
@@ -120,7 +120,7 @@
       "input_tokens": 692,
       "output_tokens": 10,
       "cost_usd": 0.002226,
-      "latency_ms": 0.5041540000547684,
+      "latency_ms": 0.46383400001559494,
       "judge": {},
       "guardrail_events": []
     },
@@ -137,7 +137,7 @@
       "input_tokens": 692,
       "output_tokens": 12,
       "cost_usd": 0.002256,
-      "latency_ms": 0.4619320000074367,
+      "latency_ms": 0.44351899998673616,
       "judge": {},
       "guardrail_events": []
     },
@@ -154,7 +154,7 @@
       "input_tokens": 692,
       "output_tokens": 9,
       "cost_usd": 0.002211,
-      "latency_ms": 0.47699000003831316,
+      "latency_ms": 0.8725090000325508,
       "judge": {},
       "guardrail_events": []
     },
@@ -171,7 +171,7 @@
       "input_tokens": 689,
       "output_tokens": 9,
       "cost_usd": 0.002202,
-      "latency_ms": 0.43353199998819036,
+      "latency_ms": 0.7327700000132609,
       "judge": {},
       "guardrail_events": []
     },
@@ -188,7 +188,7 @@
       "input_tokens": 689,
       "output_tokens": 12,
       "cost_usd": 0.002247,
-      "latency_ms": 0.4846440000392249,
+      "latency_ms": 0.4649239999707788,
       "judge": {},
       "guardrail_events": []
     },
@@ -205,7 +205,7 @@
       "input_tokens": 692,
       "output_tokens": 10,
       "cost_usd": 0.002226,
-      "latency_ms": 0.6317170000329497,
+      "latency_ms": 0.5849650000300244,
       "judge": {},
       "guardrail_events": []
     },
@@ -222,7 +222,7 @@
       "input_tokens": 691,
       "output_tokens": 12,
       "cost_usd": 0.002253,
-      "latency_ms": 0.515349000011156,
+      "latency_ms": 0.46817299994472705,
       "judge": {},
       "guardrail_events": []
     },
@@ -239,7 +239,7 @@
       "input_tokens": 693,
       "output_tokens": 9,
       "cost_usd": 0.002214,
-      "latency_ms": 0.5068300000630188,
+      "latency_ms": 0.46021800005746627,
       "judge": {},
       "guardrail_events": []
     },
@@ -256,7 +256,7 @@
       "input_tokens": 691,
       "output_tokens": 9,
       "cost_usd": 0.002208,
-      "latency_ms": 0.4678299999341107,
+      "latency_ms": 0.5662620000066454,
       "judge": {},
       "guardrail_events": []
     },
@@ -273,7 +273,7 @@
       "input_tokens": 689,
       "output_tokens": 12,
       "cost_usd": 0.002247,
-      "latency_ms": 0.43183900004351017,
+      "latency_ms": 0.42484300001888187,
       "judge": {},
       "guardrail_events": []
     },
@@ -290,7 +290,7 @@
       "input_tokens": 693,
       "output_tokens": 10,
       "cost_usd": 0.002229,
-      "latency_ms": 0.5424690000381815,
+      "latency_ms": 0.4655459999867162,
       "judge": {},
       "guardrail_events": []
     },
@@ -307,7 +307,7 @@
       "input_tokens": 689,
       "output_tokens": 12,
       "cost_usd": 0.002247,
-      "latency_ms": 1.1901350000016464,
+      "latency_ms": 0.793379000015193,
       "judge": {},
       "guardrail_events": []
     },
@@ -324,7 +324,7 @@
       "input_tokens": 689,
       "output_tokens": 9,
       "cost_usd": 0.002202,
-      "latency_ms": 0.47196200000598765,
+      "latency_ms": 1.6268529999479142,
       "judge": {},
       "guardrail_events": []
     },
@@ -341,7 +341,7 @@
       "input_tokens": 691,
       "output_tokens": 9,
       "cost_usd": 0.002208,
-      "latency_ms": 0.5249690000255214,
+      "latency_ms": 0.6110960000569321,
       "judge": {},
       "guardrail_events": []
     },
@@ -358,7 +358,7 @@
       "input_tokens": 689,
       "output_tokens": 12,
       "cost_usd": 0.002247,
-      "latency_ms": 0.5367310000110592,
+      "latency_ms": 0.486919000081798,
       "judge": {},
       "guardrail_events": []
     },
@@ -375,7 +375,7 @@
       "input_tokens": 689,
       "output_tokens": 10,
       "cost_usd": 0.002217,
-      "latency_ms": 0.5086390000315077,
+      "latency_ms": 0.4459989999077152,
       "judge": {},
       "guardrail_events": []
     },
@@ -392,7 +392,7 @@
       "input_tokens": 693,
       "output_tokens": 12,
       "cost_usd": 0.002259,
-      "latency_ms": 0.6276089999346368,
+      "latency_ms": 0.5216810000092664,
       "judge": {},
       "guardrail_events": []
     },
@@ -409,7 +409,7 @@
       "input_tokens": 601,
       "output_tokens": 9,
       "cost_usd": 0.001938,
-      "latency_ms": 0.5204919999641788,
+      "latency_ms": 0.48486299999694893,
       "judge": {},
       "guardrail_events": []
     },
@@ -426,7 +426,7 @@
       "input_tokens": 603,
       "output_tokens": 9,
       "cost_usd": 0.001944,
-      "latency_ms": 0.4891099999895232,
+      "latency_ms": 0.4031890000533167,
       "judge": {},
       "guardrail_events": []
     },
@@ -443,7 +443,7 @@
       "input_tokens": 598,
       "output_tokens": 12,
       "cost_usd": 0.001974,
-      "latency_ms": 0.4779880000569392,
+      "latency_ms": 0.399926999989475,
       "judge": {},
       "guardrail_events": []
     },
@@ -460,7 +460,7 @@
       "input_tokens": 605,
       "output_tokens": 10,
       "cost_usd": 0.001965,
-      "latency_ms": 0.5132960000082676,
+      "latency_ms": 0.4544099999748141,
       "judge": {},
       "guardrail_events": []
     },
@@ -477,7 +477,7 @@
       "input_tokens": 603,
       "output_tokens": 12,
       "cost_usd": 0.001989,
-      "latency_ms": 0.5223859999432534,
+      "latency_ms": 0.4307339999058968,
       "judge": {},
       "guardrail_events": []
     },
@@ -494,7 +494,7 @@
       "input_tokens": 649,
       "output_tokens": 9,
       "cost_usd": 0.002082,
-      "latency_ms": 0.4721279999557737,
+      "latency_ms": 0.5117780000318817,
       "judge": {},
       "guardrail_events": []
     },
@@ -511,7 +511,7 @@
       "input_tokens": 648,
       "output_tokens": 9,
       "cost_usd": 0.002079,
-      "latency_ms": 0.4833749999306747,
+      "latency_ms": 0.48139000000446686,
       "judge": {},
       "guardrail_events": []
     },
@@ -528,7 +528,7 @@
       "input_tokens": 645,
       "output_tokens": 12,
       "cost_usd": 0.002115,
-      "latency_ms": 0.6441329999233858,
+      "latency_ms": 0.40759800003797864,
       "judge": {},
       "guardrail_events": []
     },
@@ -545,7 +545,7 @@
       "input_tokens": 648,
       "output_tokens": 10,
       "cost_usd": 0.002094,
-      "latency_ms": 0.5240200000571349,
+      "latency_ms": 0.4567629999883138,
       "judge": {},
       "guardrail_events": []
     },
@@ -562,7 +562,7 @@
       "input_tokens": 647,
       "output_tokens": 12,
       "cost_usd": 0.002121,
-      "latency_ms": 0.459632000001875,
+      "latency_ms": 0.45403199999327626,
       "judge": {},
       "guardrail_events": []
     },
@@ -579,7 +579,7 @@
       "input_tokens": 598,
       "output_tokens": 9,
       "cost_usd": 0.001929,
-      "latency_ms": 0.48803000004227215,
+      "latency_ms": 0.43629900005726086,
       "judge": {},
       "guardrail_events": []
     },
@@ -596,7 +596,7 @@
       "input_tokens": 589,
       "output_tokens": 15,
       "cost_usd": 0.001992,
-      "latency_ms": 0.48152700003356586,
+      "latency_ms": 0.5364360000612578,
       "judge": {},
       "guardrail_events": []
     },
@@ -613,7 +613,7 @@
       "input_tokens": 599,
       "output_tokens": 11,
       "cost_usd": 0.001962,
-      "latency_ms": 0.5136579999316382,
+      "latency_ms": 0.5431209999642306,
       "judge": {},
       "guardrail_events": []
     },
@@ -630,7 +630,7 @@
       "input_tokens": 596,
       "output_tokens": 9,
       "cost_usd": 0.001923,
-      "latency_ms": 0.5300840000472817,
+      "latency_ms": 0.5843830000458183,
       "judge": {},
       "guardrail_events": []
     },
@@ -647,7 +647,7 @@
       "input_tokens": 599,
       "output_tokens": 9,
       "cost_usd": 0.001932,
-      "latency_ms": 0.45853500000703207,
+      "latency_ms": 0.43616599998586025,
       "judge": {},
       "guardrail_events": []
     },
@@ -664,7 +664,7 @@
       "input_tokens": 589,
       "output_tokens": 15,
       "cost_usd": 0.001992,
-      "latency_ms": 0.5085420000341401,
+      "latency_ms": 0.440224000044509,
       "judge": {},
       "guardrail_events": []
     },
@@ -681,7 +681,7 @@
       "input_tokens": 599,
       "output_tokens": 11,
       "cost_usd": 0.001962,
-      "latency_ms": 0.4554050000251664,
+      "latency_ms": 0.42350199998963944,
       "judge": {},
       "guardrail_events": []
     },
@@ -698,7 +698,7 @@
       "input_tokens": 598,
       "output_tokens": 9,
       "cost_usd": 0.001929,
-      "latency_ms": 0.6149800000230243,
+      "latency_ms": 0.45202100000096834,
       "judge": {},
       "guardrail_events": []
     },
@@ -715,7 +715,7 @@
       "input_tokens": 598,
       "output_tokens": 9,
       "cost_usd": 0.001929,
-      "latency_ms": 0.6875669999999445,
+      "latency_ms": 0.4745909999428477,
       "judge": {},
       "guardrail_events": []
     },
@@ -732,7 +732,7 @@
       "input_tokens": 601,
       "output_tokens": 15,
       "cost_usd": 0.002028,
-      "latency_ms": 0.46488500004215894,
+      "latency_ms": 0.46728000006623915,
       "judge": {},
       "guardrail_events": []
     },
@@ -749,7 +749,7 @@
       "input_tokens": 598,
       "output_tokens": 11,
       "cost_usd": 0.001959,
-      "latency_ms": 0.4526580000856484,
+      "latency_ms": 0.4154739999648882,
       "judge": {},
       "guardrail_events": []
     },
@@ -766,7 +766,7 @@
       "input_tokens": 599,
       "output_tokens": 9,
       "cost_usd": 0.001932,
-      "latency_ms": 0.48472799994669913,
+      "latency_ms": 0.47307800002727163,
       "judge": {},
       "guardrail_events": []
     },
@@ -783,7 +783,7 @@
       "input_tokens": 632,
       "output_tokens": 9,
       "cost_usd": 0.002031,
-      "latency_ms": 0.4363949999515171,
+      "latency_ms": 0.41392299999643,
       "judge": {},
       "guardrail_events": []
     },
@@ -800,7 +800,7 @@
       "input_tokens": 590,
       "output_tokens": 15,
       "cost_usd": 0.001995,
-      "latency_ms": 0.4739129999506986,
+      "latency_ms": 0.42938100000355917,
       "judge": {},
       "guardrail_events": []
     },
@@ -817,7 +817,7 @@
       "input_tokens": 585,
       "output_tokens": 11,
       "cost_usd": 0.00192,
-      "latency_ms": 0.4468109999606895,
+      "latency_ms": 0.5193550000512914,
       "judge": {},
       "guardrail_events": []
     },
@@ -834,7 +834,7 @@
       "input_tokens": 633,
       "output_tokens": 9,
       "cost_usd": 0.002034,
-      "latency_ms": 0.47155199990811525,
+      "latency_ms": 0.8410479999838572,
       "judge": {},
       "guardrail_events": []
     },
@@ -851,7 +851,7 @@
       "input_tokens": 584,
       "output_tokens": 11,
       "cost_usd": 0.001917,
-      "latency_ms": 0.4320000000461732,
+      "latency_ms": 0.46609699995769915,
       "judge": {},
       "guardrail_events": []
     },
@@ -868,7 +868,7 @@
       "input_tokens": 630,
       "output_tokens": 11,
       "cost_usd": 0.002055,
-      "latency_ms": 0.38130799998725706,
+      "latency_ms": 0.37633200008713175,
       "judge": {},
       "guardrail_events": []
     },
@@ -885,7 +885,7 @@
       "input_tokens": 438,
       "output_tokens": 13,
       "cost_usd": 0.001509,
-      "latency_ms": 0.37137800006803445,
+      "latency_ms": 0.36751699997239484,
       "judge": {},
       "guardrail_events": []
     },
@@ -902,7 +902,7 @@
       "input_tokens": 440,
       "output_tokens": 13,
       "cost_usd": 0.001515,
-      "latency_ms": 0.3341599999657774,
+      "latency_ms": 0.337528000045495,
       "judge": {},
       "guardrail_events": []
     },
@@ -919,7 +919,7 @@
       "input_tokens": 440,
       "output_tokens": 13,
       "cost_usd": 0.001515,
-      "latency_ms": 0.40095200006362575,
+      "latency_ms": 0.3970400000525842,
       "judge": {},
       "guardrail_events": []
     },
@@ -936,7 +936,7 @@
       "input_tokens": 440,
       "output_tokens": 13,
       "cost_usd": 0.001515,
-      "latency_ms": 0.33639399998719455,
+      "latency_ms": 0.4112489999670288,
       "judge": {},
       "guardrail_events": []
     },
@@ -953,7 +953,7 @@
       "input_tokens": 438,
       "output_tokens": 13,
       "cost_usd": 0.001509,
-      "latency_ms": 0.34599599996454344,
+      "latency_ms": 0.35066800001004594,
       "judge": {},
       "guardrail_events": []
     },
@@ -970,7 +970,7 @@
       "input_tokens": 440,
       "output_tokens": 13,
       "cost_usd": 0.001515,
-      "latency_ms": 0.3255529999250939,
+      "latency_ms": 0.3596810000772166,
       "judge": {},
       "guardrail_events": []
     },
@@ -987,7 +987,7 @@
       "input_tokens": 691,
       "output_tokens": 9,
       "cost_usd": 0.002208,
-      "latency_ms": 0.4803799999990588,
+      "latency_ms": 0.4586869999911869,
       "judge": {},
       "guardrail_events": []
     },
@@ -1004,7 +1004,7 @@
       "input_tokens": 635,
       "output_tokens": 9,
       "cost_usd": 0.00204,
-      "latency_ms": 0.46449400008441444,
+      "latency_ms": 0.485856000068452,
       "judge": {},
       "guardrail_events": []
     },
@@ -1021,7 +1021,7 @@
       "input_tokens": 359,
       "output_tokens": 11,
       "cost_usd": 0.001242,
-      "latency_ms": 0.300465999998778,
+      "latency_ms": 0.2802520000386721,
       "judge": {},
       "guardrail_events": []
     },
@@ -1038,7 +1038,7 @@
       "input_tokens": 627,
       "output_tokens": 11,
       "cost_usd": 0.002046,
-      "latency_ms": 0.4261689999793816,
+      "latency_ms": 0.44587799993678345,
       "judge": {},
       "guardrail_events": []
     },
@@ -1055,7 +1055,7 @@
       "input_tokens": 678,
       "output_tokens": 11,
       "cost_usd": 0.002199,
-      "latency_ms": 0.5018199999540229,
+      "latency_ms": 0.42364099999758764,
       "judge": {},
       "guardrail_events": []
     },
@@ -1072,7 +1072,7 @@
       "input_tokens": 601,
       "output_tokens": 27,
       "cost_usd": 0.002208,
-      "latency_ms": 0.4365429999779735,
+      "latency_ms": 0.44493299992609536,
       "judge": {},
       "guardrail_events": []
     },
@@ -1089,7 +1089,7 @@
       "input_tokens": 584,
       "output_tokens": 11,
       "cost_usd": 0.001917,
-      "latency_ms": 0.4266529999767954,
+      "latency_ms": 0.4185220000181289,
       "judge": {},
       "guardrail_events": []
     },
@@ -1106,7 +1106,7 @@
       "input_tokens": 635,
       "output_tokens": 10,
       "cost_usd": 0.002055,
-      "latency_ms": 0.4881979999709074,
+      "latency_ms": 0.548129999970115,
       "judge": {},
       "guardrail_events": []
     },
@@ -1123,7 +1123,7 @@
       "input_tokens": 636,
       "output_tokens": 11,
       "cost_usd": 0.002073,
-      "latency_ms": 0.46003800002836215,
+      "latency_ms": 0.4866919999813035,
       "judge": {},
       "guardrail_events": []
     },
@@ -1140,7 +1140,7 @@
       "input_tokens": 629,
       "output_tokens": 7,
       "cost_usd": 0.001992,
-      "latency_ms": 0.4396989999122525,
+      "latency_ms": 0.5759450000368815,
       "judge": {},
       "guardrail_events": []
     },
@@ -1157,7 +1157,7 @@
       "input_tokens": 633,
       "output_tokens": 14,
       "cost_usd": 0.002109,
-      "latency_ms": 0.6111769999961325,
+      "latency_ms": 0.4811729999119052,
       "judge": {},
       "guardrail_events": []
     },
@@ -1174,7 +1174,7 @@
       "input_tokens": 601,
       "output_tokens": 10,
       "cost_usd": 0.001953,
-      "latency_ms": 0.43572899994615,
+      "latency_ms": 0.483826000049703,
       "judge": {},
       "guardrail_events": []
     },
@@ -1191,7 +1191,7 @@
       "input_tokens": 606,
       "output_tokens": 11,
       "cost_usd": 0.001983,
-      "latency_ms": 0.45898600001237355,
+      "latency_ms": 0.49320499999794265,
       "judge": {},
       "guardrail_events": []
     },
@@ -1208,7 +1208,7 @@
       "input_tokens": 598,
       "output_tokens": 7,
       "cost_usd": 0.001899,
-      "latency_ms": 0.4439750000528875,
+      "latency_ms": 0.4370220000282643,
       "judge": {},
       "guardrail_events": []
     },
@@ -1225,7 +1225,7 @@
       "input_tokens": 602,
       "output_tokens": 14,
       "cost_usd": 0.002016,
-      "latency_ms": 0.43352299996968213,
+      "latency_ms": 0.43289400002777256,
       "judge": {},
       "guardrail_events": []
     },
@@ -1242,7 +1242,7 @@
       "input_tokens": 600,
       "output_tokens": 10,
       "cost_usd": 0.00195,
-      "latency_ms": 0.4031150000400885,
+      "latency_ms": 0.49749400000109745,
       "judge": {},
       "guardrail_events": []
     },
@@ -1259,7 +1259,7 @@
       "input_tokens": 607,
       "output_tokens": 11,
       "cost_usd": 0.001986,
-      "latency_ms": 0.6176319999440238,
+      "latency_ms": 0.5322030000343148,
       "judge": {},
       "guardrail_events": []
     },
@@ -1276,7 +1276,7 @@
       "input_tokens": 598,
       "output_tokens": 7,
       "cost_usd": 0.001899,
-      "latency_ms": 1.5971060000765647,
+      "latency_ms": 0.4143700000440731,
       "judge": {},
       "guardrail_events": []
     },
@@ -1293,7 +1293,7 @@
       "input_tokens": 603,
       "output_tokens": 14,
       "cost_usd": 0.002019,
-      "latency_ms": 0.5364410000083808,
+      "latency_ms": 0.4490989999794692,
       "judge": {},
       "guardrail_events": []
     },
@@ -1310,7 +1310,7 @@
       "input_tokens": 635,
       "output_tokens": 10,
       "cost_usd": 0.002055,
-      "latency_ms": 0.4982509999535978,
+      "latency_ms": 0.4563910000570104,
       "judge": {},
       "guardrail_events": []
     },
@@ -1327,7 +1327,7 @@
       "input_tokens": 637,
       "output_tokens": 11,
       "cost_usd": 0.002076,
-      "latency_ms": 0.45013099997959216,
+      "latency_ms": 0.44962800006942416,
       "judge": {},
       "guardrail_events": []
     },
@@ -1344,7 +1344,7 @@
       "input_tokens": 630,
       "output_tokens": 7,
       "cost_usd": 0.001995,
-      "latency_ms": 0.40767400003005605,
+      "latency_ms": 0.42848800001138443,
       "judge": {},
       "guardrail_events": []
     },
@@ -1361,7 +1361,7 @@
       "input_tokens": 634,
       "output_tokens": 14,
       "cost_usd": 0.002112,
-      "latency_ms": 0.4449829999657595,
+      "latency_ms": 0.4872010000553928,
       "judge": {},
       "guardrail_events": []
     },
@@ -1378,7 +1378,7 @@
       "input_tokens": 633,
       "output_tokens": 10,
       "cost_usd": 0.002049,
-      "latency_ms": 0.4636380000420104,
+      "latency_ms": 0.43367399996441236,
       "judge": {},
       "guardrail_events": []
     },
@@ -1395,7 +1395,7 @@
       "input_tokens": 640,
       "output_tokens": 11,
       "cost_usd": 0.002085,
-      "latency_ms": 0.4659230000925163,
+      "latency_ms": 0.5180179999797474,
       "judge": {},
       "guardrail_events": []
     },
@@ -1412,7 +1412,7 @@
       "input_tokens": 632,
       "output_tokens": 7,
       "cost_usd": 0.002001,
-      "latency_ms": 0.4458859999658671,
+      "latency_ms": 1.1213809999617297,
       "judge": {},
       "guardrail_events": []
     },
@@ -1429,7 +1429,7 @@
       "input_tokens": 636,
       "output_tokens": 14,
       "cost_usd": 0.002118,
-      "latency_ms": 0.4464489999236321,
+      "latency_ms": 0.5886270000701188,
       "judge": {},
       "guardrail_events": []
     },
@@ -1446,7 +1446,7 @@
       "input_tokens": 637,
       "output_tokens": 10,
       "cost_usd": 0.002061,
-      "latency_ms": 0.43738900001244474,
+      "latency_ms": 0.5164839999451942,
       "judge": {},
       "guardrail_events": []
     },
@@ -1463,7 +1463,7 @@
       "input_tokens": 637,
       "output_tokens": 11,
       "cost_usd": 0.002076,
-      "latency_ms": 0.45568400003048737,
+      "latency_ms": 0.4491160000270611,
       "judge": {},
       "guardrail_events": []
     },
@@ -1480,7 +1480,7 @@
       "input_tokens": 632,
       "output_tokens": 7,
       "cost_usd": 0.002001,
-      "latency_ms": 0.4634650000525653,
+      "latency_ms": 0.4536470000857662,
       "judge": {},
       "guardrail_events": []
     },
@@ -1497,7 +1497,7 @@
       "input_tokens": 636,
       "output_tokens": 14,
       "cost_usd": 0.002118,
-      "latency_ms": 0.4327190000594783,
+      "latency_ms": 0.45866599998589663,
       "judge": {},
       "guardrail_events": []
     },
@@ -1514,7 +1514,7 @@
       "input_tokens": 569,
       "output_tokens": 10,
       "cost_usd": 0.001857,
-      "latency_ms": 0.4511309999770674,
+      "latency_ms": 0.43014200002744474,
       "judge": {},
       "guardrail_events": []
     },
@@ -1531,7 +1531,7 @@
       "input_tokens": 573,
       "output_tokens": 11,
       "cost_usd": 0.001884,
-      "latency_ms": 0.47034199997142423,
+      "latency_ms": 0.5225969999855806,
       "judge": {},
       "guardrail_events": []
     },
@@ -1548,7 +1548,7 @@
       "input_tokens": 565,
       "output_tokens": 7,
       "cost_usd": 0.0018,
-      "latency_ms": 0.432828000043628,
+      "latency_ms": 0.4401599999255268,
       "judge": {},
       "guardrail_events": []
     },
@@ -1565,7 +1565,7 @@
       "input_tokens": 571,
       "output_tokens": 14,
       "cost_usd": 0.001923,
-      "latency_ms": 0.49414800002978154,
+      "latency_ms": 0.43976399990697246,
       "judge": {},
       "guardrail_events": []
     },
@@ -1582,7 +1582,7 @@
       "input_tokens": 638,
       "output_tokens": 10,
       "cost_usd": 0.002064,
-      "latency_ms": 0.5327970000053028,
+      "latency_ms": 0.4588340000282187,
       "judge": {},
       "guardrail_events": []
     },
@@ -1599,7 +1599,7 @@
       "input_tokens": 641,
       "output_tokens": 11,
       "cost_usd": 0.002088,
-      "latency_ms": 0.4532809999773235,
+      "latency_ms": 0.49085299997386755,
       "judge": {},
       "guardrail_events": []
     },
@@ -1616,7 +1616,7 @@
       "input_tokens": 633,
       "output_tokens": 7,
       "cost_usd": 0.002004,
-      "latency_ms": 0.4164780000337487,
+      "latency_ms": 0.45054500003516296,
       "judge": {},
       "guardrail_events": []
     },
@@ -1633,7 +1633,7 @@
       "input_tokens": 638,
       "output_tokens": 14,
       "cost_usd": 0.002124,
-      "latency_ms": 0.46412899996539636,
+      "latency_ms": 0.674938000088332,
       "judge": {},
       "guardrail_events": []
     },
@@ -1650,7 +1650,7 @@
       "input_tokens": 563,
       "output_tokens": 9,
       "cost_usd": 0.001824,
-      "latency_ms": 0.4386320000548949,
+      "latency_ms": 0.6582800000387579,
       "judge": {},
       "guardrail_events": []
     },
@@ -1667,7 +1667,7 @@
       "input_tokens": 607,
       "output_tokens": 9,
       "cost_usd": 0.001956,
-      "latency_ms": 0.44579500001873384,
+      "latency_ms": 0.44882399993184663,
       "judge": {},
       "guardrail_events": []
     },
@@ -1684,7 +1684,7 @@
       "input_tokens": 562,
       "output_tokens": 12,
       "cost_usd": 0.001866,
-      "latency_ms": 0.5076600000393228,
+      "latency_ms": 0.44728099999247206,
       "judge": {},
       "guardrail_events": []
     },
@@ -1701,7 +1701,7 @@
       "input_tokens": 536,
       "output_tokens": 10,
       "cost_usd": 0.001758,
-      "latency_ms": 0.43107299995881476,
+      "latency_ms": 0.5211630000303558,
       "judge": {},
       "guardrail_events": []
     },
@@ -1718,7 +1718,7 @@
       "input_tokens": 565,
       "output_tokens": 12,
       "cost_usd": 0.001875,
-      "latency_ms": 0.4379660000495278,
+      "latency_ms": 0.47695600005681626,
       "judge": {},
       "guardrail_events": []
     },
@@ -1735,7 +1735,7 @@
       "input_tokens": 503,
       "output_tokens": 9,
       "cost_usd": 0.001644,
-      "latency_ms": 0.435226000035982,
+      "latency_ms": 0.45828700001493416,
       "judge": {},
       "guardrail_events": []
     },
@@ -1752,7 +1752,7 @@
       "input_tokens": 480,
       "output_tokens": 15,
       "cost_usd": 0.001665,
-      "latency_ms": 0.3820260000111375,
+      "latency_ms": 0.40905200000906916,
       "judge": {},
       "guardrail_events": []
     },
@@ -1769,7 +1769,7 @@
       "input_tokens": 480,
       "output_tokens": 11,
       "cost_usd": 0.001605,
-      "latency_ms": 0.3907110000227476,
+      "latency_ms": 0.37378100000751147,
       "judge": {},
       "guardrail_events": []
     },
@@ -1786,7 +1786,7 @@
       "input_tokens": 501,
       "output_tokens": 9,
       "cost_usd": 0.001638,
-      "latency_ms": 0.45096200005900755,
+      "latency_ms": 1.1611080000193397,
       "judge": {},
       "guardrail_events": []
     },
@@ -1803,7 +1803,7 @@
       "input_tokens": 523,
       "output_tokens": 11,
       "cost_usd": 0.001734,
-      "latency_ms": 0.3710320000891443,
+      "latency_ms": 0.429532999987714,
       "judge": {},
       "guardrail_events": []
     },
@@ -1820,7 +1820,7 @@
       "input_tokens": 586,
       "output_tokens": 17,
       "cost_usd": 0.002013,
-      "latency_ms": 0.42300699999486824,
+      "latency_ms": 0.439031000041723,
       "judge": {},
       "guardrail_events": []
     },
@@ -1837,7 +1837,7 @@
       "input_tokens": 452,
       "output_tokens": 13,
       "cost_usd": 0.001551,
-      "latency_ms": 0.3806519999898228,
+      "latency_ms": 0.3620479999426607,
       "judge": {},
       "guardrail_events": []
     },
@@ -1854,7 +1854,7 @@
       "input_tokens": 448,
       "output_tokens": 13,
       "cost_usd": 0.001539,
-      "latency_ms": 0.3513159999783966,
+      "latency_ms": 1.0513000000855754,
       "judge": {},
       "guardrail_events": []
     },
@@ -1871,7 +1871,7 @@
       "input_tokens": 448,
       "output_tokens": 13,
       "cost_usd": 0.001539,
-      "latency_ms": 0.31531900003756164,
+      "latency_ms": 0.33238899993648374,
       "judge": {},
       "guardrail_events": []
     },
@@ -1888,7 +1888,7 @@
       "input_tokens": 448,
       "output_tokens": 13,
       "cost_usd": 0.001539,
-      "latency_ms": 0.35646800006361445,
+      "latency_ms": 0.3257560000520243,
       "judge": {},
       "guardrail_events": []
     },
@@ -1905,7 +1905,7 @@
       "input_tokens": 449,
       "output_tokens": 13,
       "cost_usd": 0.001542,
-      "latency_ms": 0.3330560000449623,
+      "latency_ms": 0.9982419999232661,
       "judge": {},
       "guardrail_events": []
     },
@@ -1922,7 +1922,7 @@
       "input_tokens": 448,
       "output_tokens": 13,
       "cost_usd": 0.001539,
-      "latency_ms": 0.32267599999613594,
+      "latency_ms": 0.3637009999692964,
       "judge": {},
       "guardrail_events": []
     },
@@ -1939,7 +1939,7 @@
       "input_tokens": 587,
       "output_tokens": 11,
       "cost_usd": 0.001926,
-      "latency_ms": 0.4443000000264874,
+      "latency_ms": 0.4345999999486594,
       "judge": {},
       "guardrail_events": []
     },
@@ -1956,7 +1956,7 @@
       "input_tokens": 633,
       "output_tokens": 11,
       "cost_usd": 0.002064,
-      "latency_ms": 0.4233150000345631,
+      "latency_ms": 0.4958309999665289,
       "judge": {},
       "guardrail_events": []
     },
@@ -1973,7 +1973,7 @@
       "input_tokens": 502,
       "output_tokens": 9,
       "cost_usd": 0.001641,
-      "latency_ms": 0.39304899996750464,
+      "latency_ms": 0.4286530000854327,
       "judge": {},
       "guardrail_events": []
     },
@@ -1990,7 +1990,7 @@
       "input_tokens": 603,
       "output_tokens": 14,
       "cost_usd": 0.002019,
-      "latency_ms": 0.46422200000506564,
+      "latency_ms": 0.4678970000213667,
       "judge": {},
       "guardrail_events": []
     },
@@ -2007,7 +2007,7 @@
       "input_tokens": 602,
       "output_tokens": 14,
       "cost_usd": 0.002016,
-      "latency_ms": 0.44090599999435653,
+      "latency_ms": 0.5004880000569756,
       "judge": {},
       "guardrail_events": []
     },
@@ -2024,7 +2024,7 @@
       "input_tokens": 570,
       "output_tokens": 14,
       "cost_usd": 0.00192,
-      "latency_ms": 0.4571790000227338,
+      "latency_ms": 0.47358599999824946,
       "judge": {},
       "guardrail_events": []
     },
@@ -2041,7 +2041,7 @@
       "input_tokens": 634,
       "output_tokens": 14,
       "cost_usd": 0.002112,
-      "latency_ms": 0.5090869999548886,
+      "latency_ms": 0.5016799999566501,
       "judge": {},
       "guardrail_events": []
     }
